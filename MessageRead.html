@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ticket Details</title>
+
+    <!-- jQuery and jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="Scripts/jquery-3.6.0.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Office UI Fabric Core CSS -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.0/css/fabric.min.css">
+
+    <!-- Custom CSS -->
+    <link href="https://defiancetech1-my.sharepoint.com/:u:/g/personal/hamri_selvi_hindujatech_com/EaKfwsnBPWNBl80jiWxhilkBagiFHn8-Ii_b13umJD8_0A?e=OotReT" rel="stylesheet" type="text/css">
+    <link href="https://defiancetech1-my.sharepoint.com/:u:/g/personal/hamri_selvi_hindujatech_com/EVgeFGfHw49PnRRAVRTA-bQByh0GEcval1MWjOCWLI7Vfg?e=N70Se4" rel="stylesheet" type="text/css">
+
+    <!-- Office.js -->
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- Your JavaScript Files -->
+    <script src="https://defiancetech1-my.sharepoint.com/:u:/g/personal/hamri_selvi_hindujatech_com/EXeH2_tOk7xIlaGDQ1jL65gBZJWxzaDPP-0Qv3uHWt_Liw?e=Zed7jo" type="text/javascript"></script>
+    <script src="https://defiancetech1-my.sharepoint.com/:u:/g/personal/hamri_selvi_hindujatech_com/EUInOzU72BZArxUgrTsJo7wBC8m_p7DRbsK0o02YN3uRmw?e=1GmW3f" type="text/javascript"></script>
+
+    <style>
+        /* Custom CSS for dialog */
+        .ui-dialog-titlebar .ui-dialog-titlebar-close {
+           display: none; /* Hide the close button */
+            
+        }
+        .custom-close-button {
+            background-color: #034fa0 !important; /* New background color for the close button */
+            color: white !important; /* Text color of the close button */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: none !important; /* Remove border */
+        }
+        .ui-dialog .ui-dialog-titlebar {
+            border-bottom: none; /* Remove border */
+        }
+        .ui-dialog .ui-dialog-buttonpane {
+            text-align: left;
+            border-width: 0px 0 0 0;
+            background-image: none;
+            margin-top: .5em;
+            padding: .3em 1em .5em .4em;
+        }
+
+
+
+        .ui-dialog-titlebar {
+            background: #034fa0;
+            /* Title bar color */
+            color: white; /* Title bar text color */
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="ms-font-m ms-welcome">
+    <div class="ms-Fabric content-main">
+        <h1 class="ms-font-xxl">Ticket Details</h1>
+        <table class="ms-Table ms-Table--selectable">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Id</strong></td>
+                    <td class="prop-val"><code><label id="item-id"></label></code></td>
+                </tr>
+                <tr>
+                    <td><strong>Message Id</strong></td>
+                    <td class="prop-val"><code><label id="item-internetMessageId"></label></code></td>
+                </tr>
+                <tr>
+                    <td><strong>Raised By</strong></td>
+                    <td class="prop-val"><code><label id="item-from"></label></code></td>
+                </tr>
+                <tr>
+                    <td><strong>Raised On</strong></td>
+                    <td class="prop-val"><code><label id="item-date"></label></code></td>
+                </tr>
+                <tr>
+                    <td><strong>Subject</strong></td>
+                    <td class="prop-val"><code><label id="item-subject"></label></code></td>
+                </tr>
+                <tr>
+                    <td><strong>Description</strong></td>
+                    <td class="prop-val"><code><label id="item-body"></label></code></td>
+                </tr>
+                <tr>
+                    <td><strong>Mail To</strong></td>
+                    <td class="prop-val"><code><label id="item-mailto"></label></code></td>
+                </tr>
+                <tr>
+                    <td><strong>Attachment</strong></td>
+                    <td class="prop-val"><code><label id="item-attachment"></label></code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Dialog Container -->
+    <div id="dialog"></div>
+</body>
+</html>

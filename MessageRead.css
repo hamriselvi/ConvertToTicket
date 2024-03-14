@@ -1,0 +1,27 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+td.prop-val {
+    word-break: break-all;
+}
+
+.content-main {
+    margin: 10px;
+}
+/* CSS */
+.ui-dialog-titlebar .ui-dialog-titlebar-close {
+    display: none; /* Hide the close button */
+}
+
+
+.ui-dialog-titlebar {
+    background: #102565; /* Title bar color */
+    color: white; /* Title bar text color */
+    text-align: center;
+}
+
